@@ -44,11 +44,12 @@ class _AboutPart1State extends State<AboutPart1> {
         ),
         RichText(
           text: const TextSpan(
+            style: smallTextStyle,
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n',
             children: [
               TextSpan(
                 text:
-                    'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n',
+                    'seds do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n',
               ),
               TextSpan(
                 text:
