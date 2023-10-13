@@ -49,7 +49,7 @@ class _AboutPart1State extends State<AboutPart1> {
             children: [
               TextSpan(
                 text:
-                    'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n',
+                    'seds do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n',
               ),
               TextSpan(
                 text:
