@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile/constraint/theme.dart';
 import 'package:profile/views/pages/about_page.dart';
 import 'package:profile/views/pages/header_page.dart';
+import 'package:profile/views/pages/projects_page.dart';
 import 'package:profile/views/pages/service_page.dart';
 import 'package:profile/views/widgets/nav_bar.dart';
 
@@ -44,6 +45,7 @@ class _HomePageState extends State<HomePage> {
                   HeaderPage(),
                   AboutPage(),
                   ServicePage(),
+                  ProjectsPage(),
                 ],
               ),
             ),

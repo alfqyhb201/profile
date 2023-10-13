@@ -11,11 +11,11 @@ class TextTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        text: 'Our ',
+        text: '$txt1 ',
         style: boldTextStyle,
         children: [
           TextSpan(
-            text: 'Services',
+            text: txt2,
             style: boldTextStyle.copyWith(color: secondaryColor),
           ),
         ],
