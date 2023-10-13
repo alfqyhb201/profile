@@ -66,10 +66,17 @@ class _NavBar1State extends State<NavBar1> {
                     ),
                   ),
                 ),
-                const Expanded(
-                  child: Text(
-                    'Services',
-                    style: navBarTextStyle,
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      pacon.animateToPage(2,
+                          duration: const Duration(milliseconds: 500),
+                          curve: Curves.easeIn);
+                    },
+                    child: const Text(
+                      'Services',
+                      style: navBarTextStyle,
+                    ),
                   ),
                 ),
                 const Expanded(

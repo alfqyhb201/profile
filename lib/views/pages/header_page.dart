@@ -20,6 +20,7 @@ class _HeaderPageState extends State<HeaderPage> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
           children: const [
             HeaderPart1(),
             ProfileImage(primeColor: secondaryColor, secondColor: primaryColor),

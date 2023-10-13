@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile/constraint/theme.dart';
 import 'package:profile/views/pages/about_page.dart';
 import 'package:profile/views/pages/header_page.dart';
+import 'package:profile/views/pages/service_page.dart';
 import 'package:profile/views/widgets/nav_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -42,6 +43,7 @@ class _HomePageState extends State<HomePage> {
                 children: const [
                   HeaderPage(),
                   AboutPage(),
+                  ServicePage(),
                 ],
               ),
             ),
