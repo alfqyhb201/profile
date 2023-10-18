@@ -24,29 +24,53 @@ class _ProjectsPageState extends State<ProjectsPage> {
             // const SizedBox(
             //   height: 40.0,
             // ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Spacer(flex: 3),
-                ProjectCard(image: '1.jpg'),
-                Spacer(),
-                ProjectCard(image: '2.jpg'),
-                Spacer(),
-                ProjectCard(image: '3.jpg'),
-                Spacer(flex: 3),
-              ],
+            Align(
+              alignment: Alignment.center,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  // crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: const [
+                    // Spacer(),
+                    ProjectCard(image: '1.jpg'),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    ProjectCard(image: '2.jpg'),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    ProjectCard(image: '3.jpg'),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                  ],
+                ),
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
-                Spacer(flex: 3),
-                ProjectCard(image: '4.jpg'),
-                Spacer(),
-                ProjectCard(image: '5.jpg'),
-                Spacer(),
-                ProjectCard(image: '6.jpg'),
-                Spacer(flex: 3),
-              ],
+            Align(
+              alignment: Alignment.center,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [
+                    ProjectCard(image: '4.jpg'),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    ProjectCard(image: '5.jpg'),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    ProjectCard(image: '6.jpg'),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                  ],
+                ),
+              ),
             ),
           ],
         ),

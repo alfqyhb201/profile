@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../constraint/theme.dart';
 
-class NavBar1 extends StatefulWidget {
+class WebNavBar extends StatefulWidget {
   final PageController pageController;
-  const NavBar1({Key? key, required this.pageController}) : super(key: key);
+  const WebNavBar({Key? key, required this.pageController}) : super(key: key);
 
   @override
-  State<NavBar1> createState() => _NavBar1State();
+  State<WebNavBar> createState() => _WebNavBarState();
 }
 
-class _NavBar1State extends State<NavBar1> {
+class _WebNavBarState extends State<WebNavBar> {
   late PageController pacon;
 
   @override

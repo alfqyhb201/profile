@@ -19,6 +19,7 @@ class _ProfileImageState extends State<ProfileImage>
 
   late Color _primeColor;
   late Color _secondColor;
+  double sizedWidget = 300.0;
 
   @override
   void initState() {
@@ -45,11 +46,16 @@ class _ProfileImageState extends State<ProfileImage>
 
   @override
   Widget build(BuildContext context) {
+    if (MediaQuery.of(context).size.width < 850) {
+      sizedWidget = 200.0;
+    } else {
+      sizedWidget = 300;
+    }
     return AnimatedBuilder(
       animation: _controller,
       child: Container(
-        width: 300.0,
-        height: 300.0,
+        width: sizedWidget,
+        height: sizedWidget,
         clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(150.0),

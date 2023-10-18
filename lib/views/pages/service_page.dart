@@ -34,24 +34,40 @@ class _ServicePageState extends State<ServicePage> {
             SizedBox(
               width: double.infinity,
               height: 400.0,
-              child: Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    ServiceWidget(
-                        icon: Icons.code,
-                        title: 'Web Developer',
-                        subtitle: subtitle2),
-                    ServiceWidget(
-                        icon: AntIcons.android,
-                        title: 'App Developer',
-                        subtitle: subtitle3),
-                    ServiceWidget(
-                        icon: AntIcons.dashboard,
-                        title: 'Database Designer',
-                        subtitle: subtitle1),
-                  ],
+              child: Align(
+                alignment: Alignment.center,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      const SizedBox(
+                        width: 20.0,
+                      ),
+                      ServiceWidget(
+                          icon: Icons.code,
+                          title: 'Web Developer',
+                          subtitle: subtitle2),
+                      const SizedBox(
+                        width: 40.0,
+                      ),
+                      ServiceWidget(
+                          icon: AntIcons.android,
+                          title: 'App Developer',
+                          subtitle: subtitle3),
+                      const SizedBox(
+                        width: 40.0,
+                      ),
+                      ServiceWidget(
+                          icon: AntIcons.dashboard,
+                          title: 'Database Designer',
+                          subtitle: subtitle1),
+                      const SizedBox(
+                        width: 20.0,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
